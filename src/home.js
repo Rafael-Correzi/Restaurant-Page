@@ -1,6 +1,5 @@
 import svgBandeja from "./imagens/plate-svgrepo-com.svg";
-
-const content = document.querySelector("#content");
+import { content } from "./content.js"
 
 const h1 = document.createElement("h1");
 const restaurantParagraph = document.createElement("p");
@@ -20,4 +19,4 @@ bandeja.src = svgBandeja;
 bandeja.alt = "Bandeja";
 bandeja.classList.add("bandeja");
 
-export { content, appendHome };
+export { appendHome };

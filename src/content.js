@@ -9,15 +9,20 @@ const p = document.createElement("p");
 p.textContent = "L'idea";
 p.classList.add("logo");
 
-logoContainer.appendChild(p);
 
 const img = document.createElement("img");
-content.appendChild(img);
+function addContent() { 
+  content.appendChild(img);
+  logoContainer.appendChild(p);
+}
 
 img.src = imagemPizza;
 img.alt = "Pizza";
 img.classList.add("cheia");
 
+addContent();
+
+export { content, addContent };
 
 
 

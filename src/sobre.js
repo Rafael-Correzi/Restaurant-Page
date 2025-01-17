@@ -1,4 +1,4 @@
-const content = document.querySelector("#content");
+import { content } from "./content.js"
 
 const sobre = document.createElement("h2");
 const sobreContent = document.createElement("p");

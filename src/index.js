@@ -1,5 +1,6 @@
 import "./content.js";
-import { content, appendHome } from "./home.js";
+import { content, addContent } from "./content.js";
+import { appendHome } from "./home.js";
 import { appendCardapio } from "./cardapio.js";
 import { appendSobre } from "./sobre.js";
 import "./styles.css"
@@ -16,16 +17,19 @@ function remove() {
 
 inicio.addEventListener("click", () => {
   remove();
+  addContent();
   appendHome();
 })
 
 cardapio.addEventListener("click", () => {
   remove();
+  addContent();
   appendCardapio();
 })
 
 sobre.addEventListener("click", () => {
-  remove()
+  remove();
+  addContent();
   appendSobre();
 })
 

@@ -1,4 +1,4 @@
-const content = document.querySelector("#content");
+import { content } from "./content.js"
 
 const cardapio = document.createElement("h2");
 const item = [];
