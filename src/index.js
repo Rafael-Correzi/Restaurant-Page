@@ -1,7 +1,8 @@
-import { content, appendHome } from "./content.js";
+import "./content.js";
+import { content, appendHome } from "./home.js";
 import { appendCardapio } from "./cardapio.js";
 import { appendSobre } from "./sobre.js";
-
+import "./styles.css"
 
 const inicio = document.querySelector("#inicio");
 const cardapio = document.querySelector("#cardapio");
@@ -27,5 +28,7 @@ sobre.addEventListener("click", () => {
   remove()
   appendSobre();
 })
+
+appendHome();
 
 console.log("funcionou");

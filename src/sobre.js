@@ -13,7 +13,7 @@ function appendSobre() {
   content.appendChild(sobre);
   sobre.textContent = "Sobre nós";
   content.appendChild(sobreContent);
-  sobreContent.textContent = "Criado em 1955, l’idea oferece as experiência legítima da cozinha italiana. Prove os sabores inesquecíveis da Sicília, as maravilhas do Lombardia, e muita mais de toda a Itália aqui."
+    sobreContent.textContent = "Criado em 1955, L’idea oferece as experiência legítima da cozinha italiana. Prove os sabores inesquecíveis da Sicília, as maravilhas do Lombardia, e muita mais de toda a Itália aqui."
   content.appendChild(endereco);
   endereco.textContent = "Endereço";
   content.appendChild(enderecoContent);
