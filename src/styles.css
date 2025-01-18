@@ -99,5 +99,6 @@ button {
   color: white;
   font-family: "montserratregular", sans-serif;
   font-size: 20px;
+  cursor: pointer;
 }
 
