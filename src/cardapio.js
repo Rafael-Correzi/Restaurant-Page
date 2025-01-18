@@ -1,12 +1,22 @@
 import { content } from "./content.js"
 
+const divContainer = document.createElement("div");
 const cardapio = document.createElement("h2");
+const divItem = [];
 const item = [];
 const itemDescription = [];
+
+cardapio.classList.add("cardapio");
+
 for (let i = 0; i < 10; i++) {
+  divItem[i] = document.createElement("div");
   item[i] = document.createElement("h3");
   itemDescription[i] = document.createElement("p");
+  
+  itemDescription[i].classList.add("descricao");
 }
+
+divContainer.classList.add("cardapio-container");
 
 cardapio.textContent = "Cardápio";
 
@@ -34,11 +44,13 @@ itemDescription[9].textContent = "Arroz cremoso típico da Lombardia, com queijo
 
 
 function appendCardapio() {
-  content.appendChild(cardapio);
+  content.appendChild(divContainer);
+  divContainer.appendChild(cardapio);
 
   for (let i = 0; i < 10; i++) {
-    content.appendChild(item[i]);
-    content.appendChild(itemDescription[i]);
+    divContainer.appendChild(divItem[i]);
+    divItem[i].appendChild(item[i]);
+    divItem[i].appendChild(itemDescription[i]);
   }
 }
 

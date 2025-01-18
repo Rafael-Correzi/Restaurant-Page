@@ -5,7 +5,7 @@ const h1 = document.createElement("h1");
 const restaurantParagraph = document.createElement("p");
 const bandeja = document.createElement("img");
 
-restaurantParagraph.classList.add("descricao");
+restaurantParagraph.classList.add("home-text");
 
 function appendHome() {
   content.appendChild(h1);
