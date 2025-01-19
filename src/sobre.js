@@ -1,4 +1,5 @@
-import { content } from "./content.js"
+import { content } from "./content.js";
+import cozinha from "./imagens/cozinha.jpg";
 
 const divContainer = document.createElement("div");
 const sobre = document.createElement("h2");
@@ -8,11 +9,16 @@ const enderecoContent = document.createElement("p");
 const contato = document.createElement("h3");
 const contatoEmail = document.createElement("p");
 const contatoTelefone = document.createElement("p");
+const imgCozinha = document.createElement("img");
+
+imgCozinha.alt = "Cozinha";
+imgCozinha.src = cozinha
 
 divContainer.classList.add("sobre-container");
 
 function appendSobre() {
   content.appendChild(divContainer);
+  divContainer.appendChild(imgCozinha);
   divContainer.appendChild(sobre);
   sobre.textContent = "Sobre nós";
   sobreContent.textContent = "Criado em 1955, L’idea oferece as experiência legítima da cozinha italiana. \r\n" 

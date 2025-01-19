@@ -162,16 +162,13 @@ h2 {
   top: 0;
   background-color: #fffa;
   height: 100%;
-  padding: 0 30px;
-
- }
-
- .sobre-container > h2 {
+  padding: 10px 30px;
   text-align: center;
  }
 
- .sobre-container > h3 {
-  text-align: center;
+ .sobre-container > img {
+  margin: 20px 0;
+  width: 850px;
  }
 
 
