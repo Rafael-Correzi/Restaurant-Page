@@ -162,13 +162,30 @@ h2 {
   top: 0;
   background-color: #fffa;
   height: 100%;
+  width: 840px;
   padding: 10px 30px;
   text-align: center;
  }
 
- .sobre-container > img {
-  margin: 20px 0;
-  width: 850px;
+ .sobre-container  img {
+  margin: 40px 0;
+  width: 780px;
  }
 
+figure {
+  position: relative;
+}
 
+figcaption {
+ position: absolute;
+ width: 100%;
+ text-align: center;
+ bottom: 30px;
+ color: #ddd;
+ font-size: 14px;
+}
+
+a {
+  color: #ddd;
+  font-size: 14px;
+}

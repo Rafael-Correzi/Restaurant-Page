@@ -4,10 +4,11 @@ import { appendHome } from "./home.js";
 import { appendCardapio } from "./cardapio.js";
 import { appendSobre } from "./sobre.js";
 import "./styles.css"
+import { select } from "./functions.js";
 
-const inicio = document.querySelector("#inicio");
-const cardapio = document.querySelector("#cardapio");
-const sobre = document.querySelector("#sobre");
+const inicio = select("#inicio");
+const cardapio = select("#cardapio");
+const sobre = select("#sobre");
 
 function remove() {
   while (content.firstChild) {
